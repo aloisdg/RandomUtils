@@ -11,7 +11,7 @@ namespace RandomUtils
 		private static readonly Random Rand = new Random();
 
 		/// <summary>
-		/// Returns the Next pseudorandom, uniformly distributed boolean value from the Random sequence.
+		/// Returns the Next pseudorandom, uniformly distributed boolean value from the System.Random sequence.
 		/// </summary>
 		/// <returns>the random bool</returns>turns>
 		public static bool NextBoolean()
@@ -50,7 +50,7 @@ namespace RandomUtils
 		}
 
 		/// <summary>
-		/// Returns the Next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from the Random sequence.
+		/// Returns the Next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from the System.Random sequence.
 		/// </summary>
 		/// <returns>the random float</returns>
 		public static float NextFloat()
@@ -72,7 +72,7 @@ namespace RandomUtils
 		}
 
 		/// <summary>
-		/// Returns the Next pseudorandom, uniformly distributed int value from the Random sequence.
+		/// Returns the Next pseudorandom, uniformly distributed int value from the System.Random sequence.
 		/// </summary>
 		/// <returns>the random int</returns>
 		public static int NextInt()
@@ -81,7 +81,7 @@ namespace RandomUtils
 		}
 
 		/// <summary>
-		/// Returns a pseudorandom, uniformly distributed int value between 0 (inclusive) and the specified value (exclusive), from the Random sequence.
+		/// Returns a pseudorandom, uniformly distributed int value between 0 (inclusive) and the specified value (exclusive), from the System.Random sequence.
 		/// </summary>
 		/// <param name="n">the specified exclusive max-value </param>
 		/// <returns>the random int</returns>
@@ -112,7 +112,7 @@ namespace RandomUtils
 		}
 
 		/// <summary>
-		/// Returns the Next pseudorandom, uniformly distributed long value from the Random sequence.
+		/// Returns the Next pseudorandom, uniformly distributed long value from the System.Random sequence.
 		/// </summary>
 		/// <returns>the random long</returns>
 		public static long NextLong()
