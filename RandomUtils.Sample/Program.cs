@@ -1,16 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RandomUtils.Sample
 {
 	class Program
 	{
-		static void Main(string[] args)
+		static void Main()
 		{
-			Console.WriteLine(RandomUtils.NextBoolean());
+			Console.WriteLine("bool\t" + RandomUtils.NextBoolean());
+			Console.WriteLine("int\t" + RandomUtils.NextInt());
+			Console.WriteLine("long\t" + RandomUtils.NextLong());
+			Console.WriteLine("float\t" + RandomUtils.NextFloat());
+			Console.WriteLine("double\t" + RandomUtils.NextDouble());
 		}
 	}
 }
