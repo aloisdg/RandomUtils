@@ -22,11 +22,12 @@ namespace RandomUtils
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed boolean value from the given random sequence.
 		/// </summary>
+		/// <see cref="http://stackoverflow.com/questions/19191058/fastest-way-to-generate-a-random-boolean"/>
 		/// <param name="rand">the Random sequence generator</param>
 		/// <returns>the random bool</returns>
 		public static bool NextBoolean(Random rand)
 		{
-			return Convert.ToBoolean(rand.Next(2));
+			return NextDouble(rand) >= 0.5;
 		}
 
 		/// <summary>
