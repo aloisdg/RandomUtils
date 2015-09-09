@@ -60,11 +60,14 @@ namespace RandomUtils
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from the given Random sequence.
 		/// </summary>
+		/// <see cref="http://stackoverflow.com/questions/3365337/best-way-to-generate-a-random-float-in-c-sharp"/>
 		/// <param name="rand">the Random sequence generator</param>
 		/// <returns>the random float</returns>
 		public static float NextFloat(Random rand)
 		{
-			return Convert.ToSingle(NextDouble(rand));
+			var buffer = new byte[4];
+			rand.NextBytes(buffer);
+			return BitConverter.ToSingle(buffer, 0);
 		}
 
 		/// <summary>
@@ -119,11 +122,15 @@ namespace RandomUtils
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed long value from the given Random sequence.
 		/// </summary>
+		/// <see cref="http://stackoverflow.com/questions/6651554/random-number-in-long-range-is-this-the-way"/>
+		/// <seealso cref="http://stackoverflow.com/questions/15463033/c-sharp-randomlong"/>
 		/// <param name="rand">the Random sequence generator</param>
 		/// <returns>the random long</returns>
 		public static long NextLong(Random rand)
 		{
-			return Convert.ToInt64(NextDouble(rand));
+			var buf = new byte[8];
+			rand.NextBytes(buf);
+			return BitConverter.ToInt64(buf, 0);
 		}
 	}
 }
