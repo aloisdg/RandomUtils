@@ -4,8 +4,8 @@ namespace RandomUtils
 {
 	/// <summary>
 	/// RandomUtils is a wrapper that supports all possible Random methods via the Random class and its system-wide Random object.
-	/// <see cref="https://commons.apache.org/proper/commons-lang/javadocs/api-2.4/org/apache/commons/lang/math/RandomUtils.html"/>
 	/// </summary>
+	/// <see cref="https://commons.apache.org/proper/commons-lang/javadocs/api-2.4/org/apache/commons/lang/math/RandomUtils.html"/>
 	public static class RandomUtils
 	{
 		private static readonly Random Rand = new Random();
