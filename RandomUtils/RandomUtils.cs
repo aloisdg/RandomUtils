@@ -13,117 +13,117 @@ namespace RandomUtils
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed boolean value from the Random sequence.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>the random bool</returns>turns>
 		public static bool NextBoolean()
 		{
-			return Convert.ToBoolean(Rand.Next(2));
+			return NextBoolean(Rand);
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed boolean value from the given random sequence.
 		/// </summary>
-		/// <param name="rand"></param>
-		/// <returns></returns>
+		/// <param name="rand">the Random sequence generator</param>
+		/// <returns>the random bool</returns>
 		public static bool NextBoolean(Random rand)
 		{
-			throw new NotImplementedException();
+			return Convert.ToBoolean(rand.Next(2));
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from the Math.random() sequence.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>the random double</returns>
 		public static double NextDouble()
 		{
-			return Rand.NextDouble();
+			return NextDouble(Rand);
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from the given Random sequence.
 		/// </summary>
-		/// <param name="rand"></param>
-		/// <returns></returns>
+		/// <param name="rand">the Random sequence generator</param>
+		/// <returns>the random double</returns>
 		public static double NextDouble(Random rand)
 		{
-			throw new NotImplementedException();
+			return rand.NextDouble();
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from the Random sequence.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>the random float</returns>
 		public static float NextFloat()
 		{
-			return Convert.ToSingle(NextDouble());
+			return NextFloat(Rand);
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed float value between 0.0 and 1.0 from the given Random sequence.
 		/// </summary>
-		/// <param name="rand"></param>
-		/// <returns></returns>
+		/// <param name="rand">the Random sequence generator</param>
+		/// <returns>the random float</returns>
 		public static float NextFloat(Random rand)
 		{
-			throw new NotImplementedException();
+			return Convert.ToSingle(NextDouble(rand));
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed int value from the Random sequence.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>the random int</returns>
 		public static int NextInt()
 		{
-			return Rand.Next();
+			return NextInt(Rand);
 		}
 
 		/// <summary>
 		/// Returns a pseudorandom, uniformly distributed int value between 0 (inclusive) and the specified value (exclusive), from the Random sequence.
 		/// </summary>
-		/// <param name="n"></param>
-		/// <returns></returns>
+		/// <param name="n">the specified exclusive max-value </param>
+		/// <returns>the random int</returns>
 		public static int NextInt(int n)
 		{
-			return Rand.Next(n);
+			return NextInt(Rand, n);
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed int value from the given Random sequence.
 		/// </summary>
-		/// <param name="rand"></param>
-		/// <returns></returns>
+		/// <param name="rand">the Random sequence generator.</param>
+		/// <returns>the random int</returns>
 		public static int NextInt(Random rand)
 		{
-			throw new NotImplementedException();
+			return rand.Next();
 		}
 
 		/// <summary>
 		/// Returns a pseudorandom, uniformly distributed int value between 0 (inclusive) and the specified value (exclusive), from the given Random sequence.
 		/// </summary>
-		/// <param name="rand"></param>
-		/// <param name="n"></param>
-		/// <returns></returns>
+		/// <param name="rand">the Random sequence generator</param>
+		/// <param name="n">the specified exclusive max-value </param>
+		/// <returns>the random int</returns>
 		public static int NextInt(Random rand, int n)
 		{
-			throw new NotImplementedException();
+			return rand.Next(n);
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed long value from the Random sequence.
 		/// </summary>
-		/// <returns></returns>
+		/// <returns>the random long</returns>
 		public static long NextLong()
 		{
-			return Convert.ToInt64(NextDouble());
+			return NextLong(Rand);
 		}
 
 		/// <summary>
 		/// Returns the Next pseudorandom, uniformly distributed long value from the given Random sequence.
 		/// </summary>
-		/// <param name="rand"></param>
-		/// <returns></returns>
+		/// <param name="rand">the Random sequence generator</param>
+		/// <returns>the random long</returns>
 		public static long NextLong(Random rand)
 		{
-			throw new NotImplementedException();
+			return Convert.ToInt64(NextDouble(rand));
 		}
 	}
 }
