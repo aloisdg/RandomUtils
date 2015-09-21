@@ -4,6 +4,10 @@ ReandomUtils is a C# port of [org.apache.commons.lang.math.RandomUtils](https://
 
 Get the last release of ReandomUtils on [NuGet](https://www.nuget.org/packages/ReandomUtils/) or on [GitHub](https://github.com/aloisdg/ReandomUtils/releases).
 
+[![Build status](https://ci.appveyor.com/api/projects/status/my2lqrxyhsnb7v7h?svg=true)](https://ci.appveyor.com/project/aloisdg/randomutils)
+
+[![NuGet](https://img.shields.io/nuget/ReandomUtils.svg?style=flat-square)](https://www.nuget.org/packages/RandomUtils/)
+
 ## Support
 
 | Type   | IsIncluded |
