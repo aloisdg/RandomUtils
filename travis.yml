@@ -1,0 +1,8 @@
+language: csharp
+solution: RandomUtils.sln
+install:
+  - nuget restore RandomUtils.sln
+  - nuget install NUnit.Runners -Version 3.0.0 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release solution-name.sln
+  - mono ./testrunner/NUnit.Runners.3.0.0/tools/nunit-console.exe ./RandomUtils.Test/bin/Release/Gravimage.Test.dll
